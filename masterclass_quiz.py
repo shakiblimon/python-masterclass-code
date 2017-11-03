@@ -155,10 +155,33 @@ print(content)
 file.close()
 
 
+##  Dictionaries ##
+###################
+people = {"shakib":23,"Limon":25,"optime":30}
+print(people["shakib"])
+
+## Dictionaries Function
+
+numbers = {
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four"
+}
+print(2 in  numbers)  ## to get the 2 no position item
+print(numbers.get(5," key value not found")) ### if the value are not in the l ist
+
+####    Tuples  ###
+###################
+
+### its similar to  list but  here we cant cahnge the item of list that store in .
+fruits = 'apple', 'mango','peach'
+print(fruits)
+print(fruits[2])  ## index use as like as list
 
 
-
-
+### List Slicing ##
+######################
 
 
 
