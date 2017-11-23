@@ -1,3 +1,5 @@
+
+'''
 #       Calculating the interest
 ####################################
 p = int(input('Enter Value of p : '))
@@ -30,13 +32,13 @@ else:
 
 #   List operations
 ###################################
-manes = ['limon','shakib','mostak', 'mishu', 'hannan','madhobi']
+manes = ['limon','shakib','ratul', 'linkon', 'adnan','shohag']
 print(len(manes))
 manes.insert(0,'cse')
 
 print(manes)
 print(manes[1:4])
-print('mishu' in manes)
+print('shakib' in manes)
 
 #   range function in list
 ######################################
@@ -49,15 +51,15 @@ print(number)
 def names ():
     print('limon')
     print('shakib')
-    print('mostak')
-    print('mishu')
-    print('hannan')
-    print('madhbi')
+    print('shohag')
+    print('niloy')
+    print('linkon')
+    print('hafiz')
 names()
 
 #   Loop with list
 ###############################
-names = ['limon','shakib','mostak', 'mishu', 'hannan','madhobi']
+names = ['limon','ratul','mostak', 'shakib', 'linkon','niloy']
 for x in names:
     print(x)
 
@@ -195,8 +197,17 @@ print(fruits[2])  ## index use as like as list
 ### List Slicing ##
 ######################
 
+num = [1,20,30,40,60,80,90,100,130,150,170,190]
 
+print(num[0:12]) # With start and end index
 
+print(num[1:9:3]) # With interval point
+
+'''
+#  List Comprehension
+############################
+list =[x**2 for x in  range(8) if x**2 % 2 == 0 ]
+print( list)
 
 
 
