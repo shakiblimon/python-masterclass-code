@@ -1,5 +1,3 @@
-
-'''
 #       Calculating the interest
 ####################################
 p = int(input('Enter Value of p : '))
@@ -203,13 +201,10 @@ print(num[0:12]) # With start and end index
 
 print(num[1:9:3]) # With interval point
 
-'''
+
 #  List Comprehension
 ############################
 list =[x**2 for x in  range(8) if x**2 % 2 == 0 ]
 print( list)
-
-
-
 
 
