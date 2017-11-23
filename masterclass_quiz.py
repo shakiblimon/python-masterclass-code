@@ -208,3 +208,55 @@ list =[x**2 for x in  range(8) if x**2 % 2 == 0 ]
 print( list)
 
 
+#       Functional Python
+#############################
+
+    #   Lambdas
+def square(x):
+    return (x**3)
+print(square(3))
+
+result = (lambda x:x**3)(20)
+print(result)
+
+    #  Map in python
+
+def add(x):
+    return (x+2)
+
+newlist=[10,20,40,50,70,100]
+
+rst = list(map(add,newlist))
+print(rst)
+##print(list(map(add,newlist)))    ## Also can print like here
+
+## Without define the function we can do it using lambdas
+
+# rst = list(map( lambda x:x+2 , newlist))
+
+
+    # Filters
+
+newlist=[10,1,20,3,40,4,50,7,70,2,100,8]
+
+result = list(filter(lambda x: x%2 ==0 ,newlist))
+print(result)
+
+    #   Generators
+def function():
+    counter = 0
+    while counter <10:
+        yield counter
+        counter += 1
+for x in function():
+    print(x)
+
+
+    #   Finding even number with generator
+def even(x):
+    for i  in range(x):
+        if i %2 == 0 :
+            yield i
+print(list(even(20)))
+
+
