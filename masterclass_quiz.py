@@ -1,4 +1,3 @@
-'''
 #       Calculating the interest
 ####################################
 p = int(input('Enter Value of p : '))
@@ -260,7 +259,7 @@ def even(x):
             yield i
 print(list(even(20)))
 
-'''
+
 #############################################
 #       Object Oriented Python
 #############################################
@@ -282,4 +281,6 @@ class Students:         #Craeting class
 shakib = Students('blank',0)
 shakib.getdate()
 shakib.putdata()
+
+
 
