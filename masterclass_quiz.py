@@ -1,34 +1,4 @@
-__version__ = "1.0.0"
-__author__ = "Shakib Limon"
 
-#       while Loop
-#################################
-c= 1
-while c<=10:
-    print(c)
-    c+=2
-
-#   Challenge -1
-########################
-
-list =['pizza','bargre','khichuri','luci','vat']
-print(list[2])
-list.append('ruti')
-print(list)
-list.insert(3,'tacos')
-print(list)
-
-#    task -1 challenge -2
-#################################
-
-for x in range(5):
-    print('i am a programmer')
-
-    #task -2
-def square():
-    for x in range (1,10):
-        print(x*x)
-square()
 
 # Passing function as arguments #
 #################################
@@ -43,15 +13,7 @@ result = suare(add(2,3))
 print(result)
 
 
-## Twice Functional Program  ##
-###############################
-def add (x):
-    return x+10
 
-def twice(func, arg):
-    return func (func(arg))
-
-print(twice(add,10))
 
 
 #          Module in python #
@@ -141,27 +103,6 @@ print( list)
 
 
 
-#############################################
-#       Object Oriented Python
-#############################################
-class Students:         #Craeting class
-    def __init__(self,name,contact):     # Initaiting class propertices
-        self.name= name
-        self.contact = contact
-
-
-
-    def getdate(self):
-        print(' Raedy to Accept Data')
-        self.name = input('Enter Name : ')
-        self.contact = input('Enter Contact: ')
-
-    def putdata(self):
-        print('The name is  : '+self.name, '\nThis is  the contact: '+self.contact)
-
-shakib = Students('blank',0)
-shakib.getdate()
-shakib.putdata()
 
 
 
