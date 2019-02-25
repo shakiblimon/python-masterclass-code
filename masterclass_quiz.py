@@ -1,35 +1,6 @@
 __version__ = "1.0.0"
 __author__ = "Shakib Limon"
 
-
-#   List operations
-###################################
-manes = ['limon','shakib','ratul', 'linkon', 'adnan','shohag']
-print(len(manes))
-manes.insert(0,'cse')
-
-print(manes)
-print(manes[1:4])
-print('shakib' in manes)
-
-#   range function in list
-######################################
-number = list(range(5,20,2))
-print(number)
-
-
-#   Code reuse function
-###############################
-def names ():
-    print('limon')
-    print('shakib')
-    print('shohag')
-    print('niloy')
-    print('linkon')
-    print('hafiz')
-names()
-
-
 #       while Loop
 #################################
 c= 1
@@ -165,31 +136,7 @@ list =[x**2 for x in  range(8) if x**2 % 2 == 0 ]
 print( list)
 
 
-#       Functional Python
-#############################
 
-    #   Lambdas
-def square(x):
-    return (x**3)
-print(square(3))
-
-result = (lambda x:x**3)(20)
-print(result)
-
-    #  Map in python
-
-def add(x):
-    return (x+2)
-
-newlist=[10,20,40,50,70,100]
-
-rst = list(map(add,newlist))
-print(rst)
-##print(list(map(add,newlist)))    ## Also can print like here
-
-## Without define the function we can do it using lambdas
-
-# rst = list(map( lambda x:x+2 , newlist))
 
 
     # Filters
