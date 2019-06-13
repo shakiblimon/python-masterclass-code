@@ -1,4 +1,11 @@
 def merge(a, start, middle, end):
+    """
+    :param a:
+    :param start:
+    :param middle:
+    :param end:
+    :return:
+    """
     size_of_temp1 = (middle - start) + 1
     size_of_temp2 = (end - middle)
 
